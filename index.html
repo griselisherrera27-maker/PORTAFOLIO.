@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIGER Textil | Aprende Confección Paso a Paso</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+body{background:#FFF5F9;color:#333}
+header{background:linear-gradient(90deg,#7B2CBF,#FF5DA2);color:#fff;padding:14px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+header b{font-size:26px} header b span{color:#FFD6E8}
+nav{display:flex;gap:16px;flex-wrap:wrap} nav a{color:#fff;text-decoration:none;font-weight:700;font-size:14px}
+.btn{background:#fff;color:#7B2CBF;padding:10px 18px;border-radius:25px;border:none;font-weight:800;cursor:pointer}
+.btnR{background:#FF5DA2;color:#fff;padding:11px 18px;border-radius:25px;border:none;font-weight:800;cursor:pointer}
+.btnM{background:#7B2CBF;color:#fff;padding:11px 18px;border-radius:25px;border:none;font-weight:800;cursor:pointer}
+.hero{padding:45px 5%;display:flex;gap:25px;align-items:center;flex-wrap:wrap;background:linear-gradient(135deg,#F3E8FF,#FFE0EC)}
+.hero>div{flex:1;min-width:280px} .hero h1{font-size:40px;color:#2D0A4A;line-height:1.1} .hero h1 span{color:#FF5DA2}
+.hero p{margin:14px 0;font-size:17px;line-height:1.5}
+.hero img{flex:1;min-width:280px;max-width:520px;width:100%;height:330px;object-fit:cover;border-radius:25px;box-shadow:0 10px 30px rgba(123,44,191,.3)}
+section{padding:42px 5%} h2{font-size:29px;color:#7B2CBF} .sub{color:#666;margin:6px 0 22px;font-size:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px}
+.card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 5px 18px rgba(0,0,0,.08);transition:.3s}
+.card:hover{transform:translateY(-5px)} .card img{width:100%;height:190px;object-fit:cover}
+.card-body{padding:16px} .tag{display:inline-block;background:#F3E8FF;color:#7B2CBF;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:700;margin:2px}
+.precio{color:#FF5DA2;font-weight:800;font-size:20px;margin:8px 0}
+.filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px} .filtros button{padding:9px 15px;border-radius:20px;border:1px solid #7B2CBF;background:#fff;color:#7B2CBF;font-weight:700;cursor:pointer} .filtros button.on{background:#7B2CBF;color:#fff}
+.info-card{background:#fff;padding:18px;border-radius:18px;border-top:6px solid #FF5DA2}
+.ia{background:linear-gradient(135deg,#7B2CBF,#FF5DA2);color:#fff;border-radius:25px;padding:26px;display:flex;gap:16px;flex-wrap:wrap}
+.ia>div{flex:1;min-width:280px;background:rgba(255,255,255,.15);padding:18px;border-radius:18px}
+.ia input{width:100%;padding:11px;margin:7px 0;border-radius:12px;border:none}
+.chat{background:#fff;color:#333;border-radius:12px;padding:12px;height:150px;overflow:auto;font-size:14px}
+form{background:#fff;padding:22px;border-radius:20px;max-width:600px;margin:auto;box-shadow:0 5px 20px rgba(0,0,0,.08)}
+form input,form textarea,form select{width:100%;padding:12px;margin:7px 0;border:2px solid #eee;border-radius:12px;outline:none}
+footer{background:#2D0A4A;color:#fff;text-align:center;padding:28px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:200;overflow:auto;padding:20px}
+.modal-box{background:#fff;max-width:720px;margin:20px auto;border-radius:25px;overflow:hidden}
+.modal-box img{width:100%;height:270px;object-fit:cover}
+.modal-body{padding:22px} .modal-body h3{color:#7B2CBF;margin:14px 0 6px}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:10px} .info div{background:#FFF5F9;padding:12px;border-radius:14px;font-size:14px}
+.info b{color:#7B2CBF} .colores{display:flex;gap:8px;flex-wrap:wrap} .color{width:32px;height:32px;border-radius:50%;border:2px solid #eee}
+.cerrar{float:right;background:#FF5DA2;color:#fff;border:none;width:36px;height:36px;border-radius:50%;font-size:18px;cursor:pointer}
+.pasos{background:#F3E8FF;padding:14px 14px 14px 30px;border-radius:14px;margin:10px 0} .pasos li{margin:6px 0}
+@media(max-width:700px){nav{display:none}.hero h1{font-size:32px}.info{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header><b>NIGERS <span</span></b><nav><a href="#inicio">Inicio</a><a href="#cursos">Cursos</a><a href="#aprender">Qué Aprendes</a><a href="#ia">IA</a><a href="#contacto">Contacto</a></nav><button class="btn" onclick="document.getElementById('admin').style.display='block';document.getElementById('admin').scrollIntoView()">Admin 🔐</button></header>
+
+<div class="hero" id="inicio">
+<div>
+<span style="background:#fff;padding:6px 12px;border-radius:20px;color:#7B2CBF;font-weight:800">📍 Cartagena</span>
+<h1>Aprende a Manejar <span>Cada Tela</span> Paso a Paso</h1>
+<p>En <b>NIGER</b> compras el curso de la tela que quieras: <b>Algodón, Hilo, Poliéster, Lycra, Jean, Lino, Seda, Chiffon</b>. En cada curso ves su textura, cómo se corta, qué tipo de corte necesita, qué tipo de tejido es, qué aguja e hilo usar, colores y las clases completas.</p>
+<div style="display:flex;gap:8px"><input id="busq" placeholder="Buscar curso... Ej: algodón, lycra, poliéster..." style="flex:1;padding:13px;border-radius:25px;border:2px solid #E9C6FF"><button class="btnR" onclick="buscar()">Buscar 🔍</button></div>
+<p id="resB" style="color:#7B2CBF;font-weight:700"></p>
+<button class="btnR" onclick="document.getElementById('cursos').scrollIntoView()">Ver Todos los Cursos 👗</button>
+<button class="btn" onclick="document.getElementById('ia').scrollIntoView()">Preguntar a la IA 🤖</button>
+</div>
+<img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=900&q=80" alt="Telas y confección">
+</div>
+
+<section id="cursos">
+<h2>📚 Cursos de Telas - Elige el Tuyo</h2>
+<p class="sub">Dale a <b>Ver Detalles</b> y te sale TODO lo que vas a aprender en ese curso. Dale a <b>Comprar</b> para inscribirte.</p>
+<div class="filtros"><button class="on" onclick="filtrar('todo',this)">Todo</button><button onclick="filtrar('natural',this)">Naturales</button><button onclick="filtrar('sintetica',this)">Sintéticas</button><button onclick="filtrar('elastica',this)">Elásticas</button><button onclick="filtrar('hilo',this)">Hilos</button></div>
+<div class="grid" id="catalogo"></div>
+</section>
+
+<section id="aprender" style="background:#fff">
+<h2>🧵 ¿Qué Vas a Aprender en Todos los Cursos?</h2>
+<p class="sub">Todos los cursos tienen la misma estructura ordenada y explícita:</p>
+<div class="grid">
+<div class="info-card"><h3>1. Textura y Tejido</h3><p>Si es suave, gruesa, elástica, brillante. Cómo se siente al tocarla y cómo se ve por dentro.</p></div>
+<div class="info-card"><h3>2. Cómo se Corta</h3><p>Con tijera o cortadora, si se corta al hilo, al sesgo o doble. Cuánto dejar de costura y si se debe planchar o remojar antes.</p></div>
+<div class="info-card"><h3>3. Qué Corte Necesita</h3><p>Corte recto, al sesgo, corte princesa, corte en A, corte ajustado, etc. Según la prenda que vas a hacer.</p></div>
+<div class="info-card"><h3>4. Cómo se Cose</h3><p>Qué aguja, qué hilo, qué puntada, qué pie prensatelas y cómo no dañar la tela al coserla.</p></div>
+</div>
+<div style="text-align:center;margin-top:22px"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1000&q=80" style="width:100%;max-width:900px;height:240px;object-fit:cover;border-radius:20px"></div>
+</section>
+
+<section id="ia">
+<h2>🤖 IA de NIGERS - Te Ayuda a Elegir</h2>
+<p class="sub">La IA resuelve una necesidad real: ¿qué tela uso para lo que quiero hacer?</p>
+<div class="ia">
+<div><h3>💬 Chatbot Recomendador</h3><div class="chat" id="chat">🤖 Hola! Dime qué quieres hacer: vestido fresco, uniforme, ropa deportiva, vestido de fiesta...<br></div><input id="chatIn" placeholder="Ej: quiero hacer un vestido fresco"><button class="btn" onclick="responderIA()">Preguntar</button></div>
+<div><h3>✍️ Generador de Descripciones</h3><p>Escribe tu producto y la IA te crea el texto para venderlo.</p><input id="prod" placeholder="Ej: Blusa en algodón rosada"><button class="btn" onclick="generar()">Generar Descripción ✨</button><p id="descG" style="background:#fff;color:#333;padding:12px;border-radius:12px;margin-top:10px;min-height:60px">Aquí aparecerá tu descripción...</p></div>
+</div>
+</section>
+
+<section id="contacto">
+<h2 style="text-align:center">📩 Contacto / Comprar Curso</h2>
+<p class="sub" style="text-align:center">Llena el formulario y queda guardado en el Panel Admin.</p>
+<form onsubmit="enviar(event)"><input id="nom" placeholder="Tu nombre" required><input id="cel" placeholder="Tu celular / WhatsApp" required><select id="tema"><option>Quiero comprar curso de Algodón</option><option>Quiero comprar curso de Poliéster</option><option>Quiero comprar curso de Lycra</option><option>Quiero comprar curso de Hilo</option><option>Quiero comprar curso de Jean</option><option>Quiero comprar curso de Lino</option><option>Quiero comprar curso de Seda</option><option>Quiero comprar curso de Chiffon</option><option>Otro curso</option></select><textarea id="msg" placeholder="¿Qué curso quieres comprar? Cuéntanos qué quieres hacer..." rows="4" required></textarea><button class="btnR" style="width:100%">Enviar y Comprar 💌</button><p id="ok" style="color:green;font-weight:700;text-align:center;margin-top:10px"></p></form>
+</section>
+
+<div id="admin" style="display:none;padding:40px 5%;background:#F3E8FF">
+<h2>🔐 Panel Admin</h2><p>Demo para la defensa: usuario <b>admin</b> / clave <b>1234</b></p>
+<div style="background:#fff;padding:20px;border-radius:18px;max-width:500px"><input id="user" placeholder="Usuario" style="width:100%;padding:11px;margin:5px 0;border-radius:10px;border:1px solid #ddd"><input id="pass" type="password" placeholder="Contraseña" style="width:100%;padding:11px;margin:5px 0;border-radius:10px;border:1px solid #ddd"><button class="btnR" onclick="login()">Entrar</button><div id="panel" style="display:none;margin-top:12px"><h3>Pedidos / Mensajes: <span id="total">0</span></h3><div id="lista"></div></div></div>
+</div>
+
+<footer><h2 style="color:#fff">NIGERS</h2><p>Aprende textil y confección desde Cartagena</p><p style="font-size:13px;margin-top:8px">Proyecto Final - Mi Emprendimiento Digital - Griselis Herrera</p></footer>
+
+<div class="modal" id="modal"><div class="modal-box"><img id="mImg"><div class="modal-body"><button class="cerrar" onclick="cerrar()">✕</button><h2 id="mNombre" style="color:#7B2CBF"></h2><p id="mDesc"></p><p class="precio" id="mPrecio" style="font-size:22px"></p>
+<h3>🎨 Colores Disponibles</h3><div class="colores" id="mColores"></div>
+<h3>🧶 Textura</h3><p id="mTextura"></p>
+<div class="info"><div><b>✂️ Cómo se Corta</b><br><span id="mCorta"></span></div><div><b>📐 Tipo de Corte que Necesita</b><br><span id="mTipoCorte"></span></div><div><b>🧵 Tipo de Tejido</b><br><span id="mTejido"></span></div><div><b>🪡 Aguja e Hilo</b><br><span id="mAguja"></span></div></div>
+<h3>📚 Qué Vas a Ver en Este Curso</h3><ul class="pasos" id="mCurso"></ul>
+<h3>👗 Para Qué Sirve</h3><p id="mUso"></p>
+<div style="display:flex;gap:10px;margin-top:15px;flex-wrap:wrap"><button class="btnR" onclick="comprarDesdeModal()">Comprar Este Curso 🛒</button><button class="btnM" onclick="cerrar()">Volver</button></div>
+</div></div></div>
+
+<script>
+const cursos=[
+{n:"Algodón",c:"natural",img:"https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=900&q=80",desc:"El más fácil para empezar. Fresco, suave y no se resbala al coser.",precio:"$49.000",colores:["#FFFFFF","#FFAFCC","#9D4EDD","#7BDFF2","#FFD166","#000000"],textura:"Suave, fresca, mate, no brilla. Se siente como una camiseta normal. Al estirarla un poco, vuelve a su forma.",corta:"Se corta con tijera normal, en mesa plana. Se corta AL HILO (siguiendo el borde). Deja 1.5 cm de costura. Plancha antes de cortar porque encoge un poco al lavar.",tipoCorte:"Corte recto, corte en A, corte princesa. Ideal para blusas, camisas y vestidos sueltos.",tejido:"Tejido plano, de punto o popelina. Trama cerrada, no se deshilacha mucho.",aguja:"Aguja universal #80/12. Hilo de algodón o poliéster normal. Puntada recta de 3 mm.",curso:["Clase 1: Qué es el algodón y sus tipos","Clase 2: Cómo reconocerlo y no confundirlo","Clase 3: Cómo cortar sin que se tuerza","Clase 4: Cómo coser, planchar y hacer tu primera blusa"],uso:"Camisas, blusas, ropa de bebé, uniformes, vestidos frescos."},
+{n:"Hilo de Coser",c:"hilo",img:"https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=900&q=80",desc:"Sin buen hilo, la costura se rompe. Aprende cuál usar para cada tela.",precio:"$35.000",colores:["#FF5DA2","#7B2CBF","#FFFFFF","#000000","#FFD166"],textura:"Hilo de poliéster: fuerte y elástico. Hilo de algodón: suave pero se rompe más. Hilo de nylon: para telas gruesas.",corta:"No se corta con tijera de tela, se corta con tijera pequeña o cortahilos. Se mide según la costura, no se jala.",tipoCorte:"No aplica corte de tela, pero sí: corte del hilo a 40-50 cm para coser a mano y no se enrede.",tejido:"El hilo se elige según el tejido de la tela: para punto, hilo elástico. Para plano, hilo normal.",aguja:"Para hilo normal: aguja #80. Para hilo grueso (jean): aguja #100. Para hilo elástico: aguja punta bola.",curso:["Clase 1: Tipos de hilo: algodón, poliéster, nylon, elástico","Clase 2: Qué hilo para qué tela","Clase 3: Cómo enhebrar y tensión correcta","Clase 4: Práctica: coser sin que se reviente el hilo"],uso:"Para TODO. Sin hilo no hay costura. Para unir, pespuntear y hacer ojales."},
+{n:"Poliéster",c:"sintetica",img:"https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=900&q=80",desc:"No se arruga, dura mucho y es económico. El favorito para uniformes.",precio:"$45.000",colores:["#FFFFFF","#000000","#7B2CBF","#FF5DA2","#2EC4B6"],textura:"Liso, un poco brillante, se siente resbaloso. No absorbe agua, se seca rápido. No se arruga fácil.",corta:"Se corta con tijera o cortadora circular. Se corta AL HILO. No lo cortes con tijera caliente porque se quema. Deja 1 cm de costura.",tipoCorte:"Corte recto, corte slim, corte uniforme. Ideal para ropa de trabajo y forros.",tejido:"Tejido sintético, de punto o plano. A veces viene mezclado con algodón (poli-algodón).",aguja:"Aguja universal #75/11 o #80. Hilo poliéster. Puntada recta 2.5 mm. Plancha a temperatura media, no muy caliente porque se quema.",curso:["Clase 1: Qué es el poliéster y por qué no se arruga","Clase 2: Cómo cortar sin que se resbale","Clase 3: Cómo coser y planchar sin quemarlo","Clase 4: Haz tu primer uniforme / forro"],uso:"Uniformes, ropa de trabajo, forros, ropa deportiva económica, cortinas."},
+{n:"Lycra / Licra",c:"elastica",img:"https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=900&q=80",desc:"La que se estira. Para ropa deportiva y ajustada. La más delicada de coser.",precio:"$59.000",colores:["#FF5DA2","#7B2CBF","#000000","#FFD166","#2EC4B6","#FF6B6B"],textura:"Muy elástica, suave, brillante o mate. Se estira 4 veces su tamaño y vuelve. Se resbala mucho al cortar.",corta:"Se corta con cortadora circular o tijera afilada, con la tela SIN ESTIRAR, en mesa. Se corta con alfileres o pesas para que no se mueva. Deja 1 cm de costura.",tipoCorte:"Corte ajustado, corte al sesgo, corte deportivo. Para leggins, vestidos de baño, tops.",tejido:"Tejido de punto elástico, mezcla de spandex + poliéster o nylon.",aguja:"Aguja PUNTA BOLA #75/11, obligatoria. Hilo elástico o poliéster. Puntada ZIG ZAG pequeña o overlock. Nunca puntada recta sola porque se revienta al estirar.",curso:["Clase 1: Qué es la lycra y por qué se estira","Clase 2: Cómo cortar sin estirarla","Clase 3: Cómo coser con zig zag y overlock","Clase 4: Haz tu primer leggin / top deportivo"],uso:"Ropa deportiva, leggins, vestidos de baño, tops, vestidos ajustados."},
+{n:"Jean / Denim",c:"natural",img:"https://images.unsplash.com/photo-1542272604-787c3835535d?w=900&q=80",desc:"Grueso y resistente. Para jeans y chaquetas que duran años.",precio:"$55.000",colores:["#1E3A8A","#3B82F6","#000000","#A8A29E"],textura:"Grueso, rígido, con textura en diagonal. Se siente pesado. Con el lavado se suaviza.",corta:"Se corta con tijera fuerte o cortadora. Se corta AL HILO. Marca con tiza porque el lápiz no se ve. Deja 1.5 cm de costura.",tipoCorte:"Corte recto, corte skinny, corte campana, corte chaqueta. Para pantalones y chaquetas.",tejido:"Tejido de sarga, en diagonal. Muy resistente, no se rompe fácil.",aguja:"Aguja para JEAN #100/16 o #110. Hilo grueso de poliéster. Puntada recta 3.5 mm. Usa martillo para aplanar costuras gruesas.",curso:["Clase 1: Tipos de jean: rígido, stretch, liviano","Clase 2: Cómo cortar jean sin dañar la tijera","Clase 3: Cómo coser costuras gruesas","Clase 4: Haz tu primer pantalón / falda en jean"],uso:"Jeans, chaquetas, faldas, overoles."},
+{n:"Lino",c:"natural",img:"https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?w=900&q=80",desc:"El más fresco para Cartagena. Elegante pero se arruga.",precio:"$52.000",colores:["#FFFFFF","#F5E6CA","#9D4EDD","#2EC4B6"],textura:"Fresco, un poco áspero, con nudos naturales. Se arruga fácil pero se ve elegante.",corta:"Se corta AL HILO, con tijera. Remoja antes de cortar porque encoge. Deja 1.5 cm.",tipoCorte:"Corte suelto, corte en A, corte camisa. Para vestidos frescos y pantalones.",tejido:"Tejido plano de fibra natural, trama abierta, deja pasar el aire.",aguja:"Aguja universal #80. Hilo algodón. Puntada recta 3 mm. Plancha con vapor.",curso:["Clase 1: Qué es el lino y por qué es fresco","Clase 2: Cómo lavar y cortar sin que encoja","Clase 3: Cómo coser y planchar","Clase 4: Haz tu vestido fresco en lino"],uso:"Vestidos frescos, pantalones, camisas para clima caliente."},
+{n:"Seda",c:"natural",img:"https://images.unsplash.com/photo-1520006403909-838d6b92c22e?w=900&q=80",desc:"Elegante y delicada. Para vestidos de fiesta.",precio:"$65.000",colores:["#FFAFCC","#FFD166","#FFFFFF","#7B2CBF","#FF5DA2"],textura:"Muy suave, brillante, se resbala muchísimo. Delicada, se mancha con agua.",corta:"Se corta con tijera muy afilada, sobre papel o tela de algodón abajo para que no se resbale. Se corta AL SESGO para vestidos con caída. Deja 1 cm.",tipoCorte:"Corte al sesgo, corte princesa, corte evasé. Para vestidos de fiesta con caída.",tejido:"Tejido de fibra natural, muy fino, satinado.",aguja:"Aguja fina #60/8 o #70. Hilo de seda o poliéster fino. Puntada recta 2 mm. Plancha tibia con paño encima.",curso:["Clase 1: Qué es la seda y cómo cuidarla","Clase 2: Cómo cortar sin que se resbale","Clase 3: Cómo coser sin que se frunza","Clase 4: Haz tu blusa / vestido de fiesta en seda"],uso:"Vestidos de fiesta, blusas elegantes, pañuelos."},
+{n:"Chiffon",c:"sintetica",img:"https://images.unsplash.com/photo-1534126511673-b6899657816a?w=900&q=80",desc:"Transparente y con vuelo. Para faldas y mangas con movimiento.",precio:"$48.000",colores:["#FFAFCC","#FFFFFF","#9D4EDD","#FFD166"],textura:"Transparente, liviano, con vuelo. Se resbala y se deshilacha fácil.",corta:"Se corta con cortadora y sobre papel. Se corta AL SESGO. Deja 1 cm. No lo jales.",tipoCorte:"Corte en capas, corte circular, corte al sesgo. Para faldas con vuelo.",tejido:"Tejido de gasa, muy abierto, transparente.",aguja:"Aguja fina #60. Hilo fino. Puntada recta pequeña o overlock enrollado.",curso:["Clase 1: Qué es el chiffon","Clase 2: Cómo cortar sin que se mueva","Clase 3: Cómo hacer dobladillo enrollado","Clase 4: Haz tu falda con vuelo"],uso:"Faldas con vuelo, mangas transparentes, vestidos de fiesta."}
+];
+let actual=null;
+function pintar(lista){document.getElementById('catalogo').innerHTML=lista.map(t=>`<div class="card"><img src="${t.img}"><div class="card-body"><h3>Curso: ${t.n}</h3><span class="tag">${t.c}</span> <span class="tag">💜 NIGER</span><p>${t.desc}</p><p class="precio">${t.precio}</p><button class="btnM" onclick="verDetalle(${cursos.indexOf(t)})">Ver Detalles 👀</button> <button class="btnR" onclick="verDetalle(${cursos.indexOf(t)});comprarDesdeModal()">Comprar 🛒</button></div></div>`).join('')}
+pintar(cursos);
+function filtrar(cat,btn){document.querySelectorAll('.filtros button').forEach(b=>b.classList.remove('on'));btn.classList.add('on');pintar(cat==='todo'?cursos:cursos.filter(t=>t.c===cat))}
+function buscar(){let q=document.getElementById('busq').value.toLowerCase();let e=cursos.find(t=>t.n.toLowerCase().includes(q)||t.uso.toLowerCase().includes(q));document.getElementById('resB').innerText=e?`✅ Encontramos: Curso de ${e.n} - ${e.desc}`:'🔍 Prueba con: algodón, lycra, poliéster, hilo, jean, seda...'}
+function verDetalle(i){actual=cursos[i];document.getElementById('modal').style.display='block';document.getElementById('mImg').src=actual.img;document.getElementById('mNombre').innerText='Curso: '+actual.n;document.getElementById('mDesc').innerText=actual.desc;document.getElementById('mPrecio').innerText='Precio: '+actual.precio+' • Incluye certificado';document.getElementById('mColores').innerHTML=actual.colores.map(c=>`<div class="color" style="background:${c}"></div>`).join('');document.getElementById('mTextura').innerText=actual.textura;document.getElementById('mCorta').innerText=actual.corta;document.getElementById('mTipoCorte').innerText=actual.tipoCorte;document.getElementById('mTejido').innerText=actual.tejido;document.getElementById('mAguja').innerText=actual.aguja;document.getElementById('mCurso').innerHTML=actual.curso.map(x=>`<li>✅ ${x}</li>`).join('');document.getElementById('mUso').innerText=actual.uso}
+function cerrar(){document.getElementById('modal').style.display='none'}
+function comprarDesdeModal(){if(!actual) return;document.getElementById('tema').value='Quiero comprar curso de '+actual.n;cerrar();document.getElementById('contacto').scrollIntoView();alert('🛒 Vas a comprar el Curso de '+actual.n+' - '+actual.precio+'\nLlena el formulario y te contactamos.')}
+function responderIA(){let v=document.getElementById('chatIn').value.toLowerCase();let r='🤖 Para eso te recomiendo Algodón, fresco y fácil.';if(v.includes('deport'))r='🤖 Usa Lycra, se estira y no aprieta. Compra el curso de Lycra.';if(v.includes('fiesta'))r='🤖 Usa Seda, queda elegante. Compra el curso de Seda.';if(v.includes('uniforme')||v.includes('trabajo'))r='🤖 Usa Poliéster, no se arruga. Compra el curso de Poliéster.';if(v.includes('jean')||v.includes('pantalon'))r='🤖 Usa Jean, resistente. Compra el curso de Jean.';if(v.includes('fresco')||v.includes('calor'))r='🤖 Para Cartagena usa Lino o Algodón, son los más frescos.';document.getElementById('chat').innerHTML+=`<br><b>Tú:</b> ${v}<br>${r}<br>`;document.getElementById('chatIn').value=''}
+function generar(){let p=document.getElementById('prod').value||'Prenda hermosa';document.getElementById('descG').innerText=`✨ ¡Nueva! ${p} hecha con amor en Cartagena. Tela de excelente calidad, cómoda, fresca y con acabado perfecto. ¡Pídela ya! 💜💖`}
+let mensajes=[];function enviar(e){e.preventDefault();mensajes.push({n:document.getElementById('nom').value,c:document.getElementById('cel').value,t:document.getElementById('tema').value,m:document.getElementById('msg').value});document.getElementById('ok').innerText='✅ ¡Pedido guardado! Te contactaremos para tu curso. Quedó en Admin.';e.target.reset()}
+function login(){if(document.getElementById('user').value==='admin'&&document.getElementById('pass').value==='1234'){document.getElementById('panel').style.display='block';document.getElementById('total').innerText=mensajes.length;document.getElementById('lista').innerHTML=mensajes.map(m=>`<p style="background:#FFF5F9;padding:10px;border-radius:10px;margin:5px 0"><b>${m.n}</b> (${m.c}) - ${m.t}<br>${m.m}</p>`).join('')||'Aún no hay pedidos.'}else alert('Usuario: admin / Clave: 1234')}
+</script>
+</body>
+</html>
